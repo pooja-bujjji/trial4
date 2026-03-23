@@ -7,7 +7,7 @@ VOLUME_ID = 'your-volume-id'   # replace this
 
 def create_snapshot():
     response = ec2.create_snapshot(
-        VolumeId=VOLUME_ID,
+        VolumeId=vol-0536085b80fcdd726,
         Description=f"Automated snapshot {datetime.now()}"
     )
     print("Snapshot created:", response['SnapshotId'])
